@@ -15,15 +15,26 @@
 	})();
 	</script>
   
-  <title>Hello World | Hexo</title>
+  <title>MyFirstPassage | Hexo</title>
   <meta name="author" content="John Doe">
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+  <meta name="description" content="#静态博客搭建
+#一、操作过程  
+##准备工作
+
+git for windows  
+node.js  
+注册github账号
+
+##对git的部署
+####首先将git添加到环境变量中   
+####将注册的邮箱和用户名上传   
+$git config--global user.name &amp;q">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="MyFirstPassage"/>
   <meta property="og:site_name" content="Hexo"/>
 
   
@@ -81,29 +92,58 @@
   <div class="post-content">
     <header class="article-info clearfix">
   <h1 itemprop="name">
-	Hello World
+	MyFirstPassage
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="John Doe">John Doe</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-10-02T01:49:51.818Z" itemprop="datePublished">2016-10-02</time>
-    Update date:<time datetime="2016-10-02T01:52:46.903Z" itemprop="dateModified">2016-10-02</time>
+    <time datetime="2016-10-03T03:12:02.000Z" itemprop="datePublished">2016-10-03</time>
+    Update date:<time datetime="2016-10-03T10:01:43.332Z" itemprop="dateModified">2016-10-03</time>
     
   </p>
 </header>
     <div class="entry">
 		
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>#<strong>静态博客搭建</strong></p>
+<p>#<strong>一、操作过程</strong>  </p>
+<p>##准备工作</p>
+<ol>
+<li>git for windows  </li>
+<li>node.js  </li>
+<li>注册github账号</li>
+</ol>
+<p>##对git的部署</p>
+<p>####首先将git添加到环境变量中   </p>
+<p>####将注册的邮箱和用户名上传   </p>
+<p><code>$git config--global user.name &quot;Your name&quot;</code></p>
+<p><code>$git config--global user.name &quot;email@example.com&quot;</code>  </p>
+<p>####利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh key中<br><code>$ssh-keygen -t rsa -C youremail@example.com</code></p>
+<p>####检查是否可以连接<br><code>ssh git@github.com</code>  </p>
+<p>####确定连接成功后执行克隆远程仓库和提交本地仓库的操作  </p>
+<p>##HEXO  </p>
+<p>####首先安装hexo<br><code>npm install hexo -g</code>  </p>
+<p>####新建一个目录blog<br><code>mkdir blog</code>  </p>
+<p>####转移到目录blog下，并对hexo进行初始化<br><code>cd bolg</code><br><code>hexo init</code>  </p>
+<p>####启动hexo server<br><code>hexo server</code>    </p>
+<p>在浏览器中访问<strong>localhost:4000</strong><br>如果能够成功访问则说明hexo配制成功</p>
+<p>##将本地hexo与远程github关联  </p>
+<p>####修改配置文件<br>在blog中找到配置文件_config.yml,用记事本或其他编辑器打开并对其进行如下修改  </p>
+<p><code>deploy:</code><br><code>type:  git</code><br><code>repository:  git@github.com:yruri/yruri.github.io.git</code><br><code>branch:  master</code></p>
+<p>####安装hexo-deployer-git</p>
+<p><code>npm install hexo-deployer-git -S</code>  </p>
+<p>####生成静态网页  </p>
+<p><code>hexo g</code></p>
+<p>####部署到远程github</p>
+<p><code>hexo d</code></p>
+<p><em>(hexo g和hexo d是hexo generate 与hexo deploy的缩写)</em>  </p>
+<p>##设置主题  </p>
+<p>####安装<br><code>$ git clone https://github.com/huangjunhui/concise.git themes/concise</code>  </p>
+<p>####启用<br>修改你的博客根目录下的config.yml配置文件中的theme属性，将其修改为concise。</p>
+<p>####更新<br><code>$ cd themes/concise</code><br><code>$ git pull</code><br>更新前，最好先将themes/concise/_config.yml文件备份  </p>
+<p>####配置指南<br><a href="http://blog.csdn.net/v123411739/article/details/45227249" target="_blank" rel="external">配置指南</a></p>
+<p>#<strong>二、学习心得</strong></p>
 
     </div>
     <footer>
@@ -154,8 +194,8 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/10/03/MyFirstPassage/" class="alignleft prev" title="MyFirstPassage">MyFirstPassage</a>
     
+    <a href="/2016/10/02/hello-world/" class="alignright next" title="Hello World">Hello World</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -165,7 +205,7 @@ with(document)0[
 	
 	<section id="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="2016/10/02/hello-world/" data-title="Hello World" data-url="http://yoursite.com/2016/10/02/hello-world/"></div>
+		<div class="ds-thread" data-thread-key="2016/10/03/MyFirstPassage/" data-title="MyFirstPassage" data-url="http://yoursite.com/2016/10/03/MyFirstPassage/"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
