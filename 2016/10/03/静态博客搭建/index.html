@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>MyFirstPassage | Hexo</title>
+  <title>静态博客搭建 | Hexo</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,52 +15,37 @@
     <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="#静态博客搭建
-#一、操作过程  
-##准备工作
-
+  <meta name="description" content="静态博客搭建一、操作过程准备工作
 git for windows  
 node.js  
 注册github账号
 
-##对git的部署
-####首先将git添加到环境变量中   
-####将注册的邮箱和用户名上传   
+对git的部署首先将git添加到环境变量中将注册的邮箱和用户名上传   
 $git config--global user.name &amp;quot;Your name&amp;quot;
-$git config--global user.name">
+$git config--global user.name &amp;quot;email@example.com&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MyFirstPassage">
+<meta property="og:title" content="静态博客搭建">
 <meta property="og:url" content="http://yoursite.com/2016/10/03/静态博客搭建/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#静态博客搭建
-#一、操作过程  
-##准备工作
-
+<meta property="og:description" content="静态博客搭建一、操作过程准备工作
 git for windows  
 node.js  
 注册github账号
 
-##对git的部署
-####首先将git添加到环境变量中   
-####将注册的邮箱和用户名上传   
+对git的部署首先将git添加到环境变量中将注册的邮箱和用户名上传   
 $git config--global user.name &amp;quot;Your name&amp;quot;
-$git config--global user.name">
-<meta property="og:updated_time" content="2016-10-03T11:18:10.010Z">
+$git config--global user.name &amp;quot;email@example.com&amp;">
+<meta property="og:updated_time" content="2016-10-03T12:22:40.260Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MyFirstPassage">
-<meta name="twitter:description" content="#静态博客搭建
-#一、操作过程  
-##准备工作
-
+<meta name="twitter:title" content="静态博客搭建">
+<meta name="twitter:description" content="静态博客搭建一、操作过程准备工作
 git for windows  
 node.js  
 注册github账号
 
-##对git的部署
-####首先将git添加到环境变量中   
-####将注册的邮箱和用户名上传   
+对git的部署首先将git添加到环境变量中将注册的邮箱和用户名上传   
 $git config--global user.name &amp;quot;Your name&amp;quot;
-$git config--global user.name">
+$git config--global user.name &amp;quot;email@example.com&amp;">
 
   
 
@@ -192,12 +177,17 @@ $git config--global user.name">
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#静态博客搭建"><span class="toc-text">静态博客搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一、操作过程"><span class="toc-text">一、操作过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对git的部署"><span class="toc-text">对git的部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#首先将git添加到环境变量中"><span class="toc-text">首先将git添加到环境变量中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh-key中"><span class="toc-text">利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh key中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#检查是否可以连接"><span class="toc-text">检查是否可以连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#确定连接成功后执行克隆远程仓库和提交本地仓库的操作"><span class="toc-text">确定连接成功后执行克隆远程仓库和提交本地仓库的操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HEXO"><span class="toc-text">HEXO</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#首先安装hexo"><span class="toc-text">首先安装hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#新建一个目录blog"><span class="toc-text">新建一个目录blog</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#转移到目录blog下，并对hexo进行初始化"><span class="toc-text">转移到目录blog下，并对hexo进行初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启动hexo-server"><span class="toc-text">启动hexo server</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将本地hexo与远程github关联"><span class="toc-text">将本地hexo与远程github关联</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#修改配置文件"><span class="toc-text">修改配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装hexo-deployer-git"><span class="toc-text">安装hexo-deployer-git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生成静态网页"><span class="toc-text">生成静态网页</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#部署到远程github"><span class="toc-text">部署到远程github</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置主题"><span class="toc-text">设置主题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启用"><span class="toc-text">启用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#更新"><span class="toc-text">更新</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、学习总结"><span class="toc-text">二、学习总结</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
    <article id="post-静态博客搭建" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">MyFirstPassage</h1>
+    <h1 class="post-title">静态博客搭建</h1>
 
     <div class="article-meta">
       <span>
@@ -208,7 +198,7 @@ $git config--global user.name">
       
         <span class="article-author">
           <i class="icon-user"></i>
-          <span>John Doe</span>
+          <span>Yruri</span>
         </span>
       
 
@@ -227,44 +217,39 @@ $git config--global user.name">
 
   <div class="article-content">
     
-      <p>#<strong>静态博客搭建</strong></p>
-<p>#<strong>一、操作过程</strong>  </p>
-<p>##准备工作</p>
-<ol>
+      <h1 id="静态博客搭建"><a href="#静态博客搭建" class="headerlink" title="静态博客搭建"></a><strong>静态博客搭建</strong></h1><h1 id="一、操作过程"><a href="#一、操作过程" class="headerlink" title="一、操作过程"></a><strong>一、操作过程</strong></h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
 <li>git for windows  </li>
 <li>node.js  </li>
 <li>注册github账号</li>
 </ol>
-<p>##对git的部署</p>
-<p>####首先将git添加到环境变量中   </p>
-<p>####将注册的邮箱和用户名上传   </p>
+<h2 id="对git的部署"><a href="#对git的部署" class="headerlink" title="对git的部署"></a>对git的部署</h2><h4 id="首先将git添加到环境变量中"><a href="#首先将git添加到环境变量中" class="headerlink" title="首先将git添加到环境变量中"></a>首先将git添加到环境变量中</h4><p>将注册的邮箱和用户名上传   </p>
 <p><code>$git config--global user.name &quot;Your name&quot;</code></p>
 <p><code>$git config--global user.name &quot;email@example.com&quot;</code>  </p>
-<p>####利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh key中<br><code>$ssh-keygen -t rsa -C youremail@example.com</code></p>
-<p>####检查是否可以连接<br><code>ssh git@github.com</code>  </p>
-<p>####确定连接成功后执行克隆远程仓库和提交本地仓库的操作  </p>
-<p>##HEXO  </p>
-<p>####首先安装hexo<br><code>npm install hexo -g</code>  </p>
-<p>####新建一个目录blog<br><code>mkdir blog</code>  </p>
-<p>####转移到目录blog下，并对hexo进行初始化<br><code>cd bolg</code><br><code>hexo init</code>  </p>
-<p>####启动hexo server<br><code>hexo server</code>    </p>
+<h4 id="利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh-key中"><a href="#利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh-key中" class="headerlink" title="利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh key中"></a>利用如下语句生成秘钥和公钥，然后打开公钥文件将其中的内容全部复制到github账号的ssh key中</h4><p><code>$ssh-keygen -t rsa -C youremail@example.com</code></p>
+<h4 id="检查是否可以连接"><a href="#检查是否可以连接" class="headerlink" title="检查是否可以连接"></a>检查是否可以连接</h4><p><code>ssh git@github.com</code>  </p>
+<h4 id="确定连接成功后执行克隆远程仓库和提交本地仓库的操作"><a href="#确定连接成功后执行克隆远程仓库和提交本地仓库的操作" class="headerlink" title="确定连接成功后执行克隆远程仓库和提交本地仓库的操作"></a>确定连接成功后执行克隆远程仓库和提交本地仓库的操作</h4><h2 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h2><h4 id="首先安装hexo"><a href="#首先安装hexo" class="headerlink" title="首先安装hexo"></a>首先安装hexo</h4><p><code>npm install hexo -g</code>  </p>
+<h4 id="新建一个目录blog"><a href="#新建一个目录blog" class="headerlink" title="新建一个目录blog"></a>新建一个目录blog</h4><p><code>mkdir blog</code>  </p>
+<h4 id="转移到目录blog下，并对hexo进行初始化"><a href="#转移到目录blog下，并对hexo进行初始化" class="headerlink" title="转移到目录blog下，并对hexo进行初始化"></a>转移到目录blog下，并对hexo进行初始化</h4><p><code>cd bolg</code><br><code>hexo init</code>  </p>
+<h4 id="启动hexo-server"><a href="#启动hexo-server" class="headerlink" title="启动hexo server"></a>启动hexo server</h4><p><code>hexo server</code>    </p>
 <p>在浏览器中访问<strong>localhost:4000</strong><br>如果能够成功访问则说明hexo配制成功</p>
-<p>##将本地hexo与远程github关联  </p>
-<p>####修改配置文件<br>在blog中找到配置文件_config.yml,用记事本或其他编辑器打开并对其进行如下修改  </p>
+<h2 id="将本地hexo与远程github关联"><a href="#将本地hexo与远程github关联" class="headerlink" title="将本地hexo与远程github关联"></a>将本地hexo与远程github关联</h2><h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>在blog中找到配置文件_config.yml,用记事本或其他编辑器打开并对其进行如下修改  </p>
 <p><code>deploy:</code><br><code>type:  git</code><br><code>repository:  git@github.com:yruri/yruri.github.io.git</code><br><code>branch:  master</code></p>
-<p>####安装hexo-deployer-git</p>
-<p><code>npm install hexo-deployer-git -S</code>  </p>
-<p>####生成静态网页  </p>
-<p><code>hexo g</code></p>
-<p>####部署到远程github</p>
-<p><code>hexo d</code></p>
+<h4 id="安装hexo-deployer-git"><a href="#安装hexo-deployer-git" class="headerlink" title="安装hexo-deployer-git"></a>安装hexo-deployer-git</h4><p><code>npm install hexo-deployer-git -S</code>  </p>
+<h4 id="生成静态网页"><a href="#生成静态网页" class="headerlink" title="生成静态网页"></a>生成静态网页</h4><p><code>hexo g</code></p>
+<h4 id="部署到远程github"><a href="#部署到远程github" class="headerlink" title="部署到远程github"></a>部署到远程github</h4><p><code>hexo d</code></p>
 <p><em>(hexo g和hexo d是hexo generate 与hexo deploy的缩写)</em>  </p>
-<p>##设置主题  </p>
-<p>####安装<br><code>$ git clone git@github.com:forsigner/fexo.git themes/fexo</code>  </p>
-<p>####启用<br>修改你的博客根目录下的config.yml配置文件中的theme属性，将其修改为fexo。</p>
-<p>####更新<br><code>$ cd themes/fexo</code><br><code>$ git pull</code><br>更新前，最好先将themes/fexo/_config.yml文件备份  </p>
+<h2 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>$ git clone git@github.com:forsigner/fexo.git themes/fexo</code>  </p>
+<h4 id="启用"><a href="#启用" class="headerlink" title="启用"></a>启用</h4><p>修改你的博客根目录下的config.yml配置文件中的theme属性，将其修改为fexo。</p>
+<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><p><code>$ cd themes/fexo</code><br><code>$ git pull</code><br>更新前，最好先将themes/fexo/_config.yml文件备份  </p>
 <p>(ps:该主题模版没有找到配置手册，还有许多功能正在摸索中配置)</p>
-<p>#<strong>二、学习心得</strong>  </p>
+<h1 id="二、学习总结"><a href="#二、学习总结" class="headerlink" title="二、学习总结"></a><strong>二、学习总结</strong></h1><p>  在本次学习中首先是因为别的事情耽搁了一段时间，十月二日才开始搭建，在三号晚上完成了。在这个过程中还是遇见了一些问题，但是通过百度都比较轻松的解决了。<br>  比如说：  </p>
+<ol>
+<li>不小心改动了“id_rsa.pub”文件，导致和远程github上存储的ssh不一致。  </li>
+<li>在第一次进行hexo d操作时，不小心中止了操作，结果使得“.deploy_git”文件夹里的文件不完整，第二次hexo d的时候报错，这时候将原来的“.deploy_git”文件夹删除，在重新操作就行了。 </li>
+<li>在markdown的语法中标题应该前后都加上#号，虽然在看操作手册的时候标题后的#号是可有可有无的，但是如果不加上的话在博客上前面的#会显示出来，可能是因为兼容性，但是还没有找到具体原因。</li>
+</ol>
+<p>虽然因为动手搭建的时间比较晚没有参与到群邮件的讨论，但是在完整的看了一遍后还是发现了很多自己在操作中没有注意或者说在意的问题，也避免了很多错误。  </p>
+<p>最后：我的博客完成了。</p>
 
     
   </div>
