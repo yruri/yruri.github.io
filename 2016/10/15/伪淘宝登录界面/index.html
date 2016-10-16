@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>伪淘宝登录界面 | Hexo</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
+  
+
+  <meta name="description" content="伪淘宝登录界面一、操作过程###准备工作###
+
+webstorm
+bootstrap
+html，css，js相关知识
+
+####页面内容####
+首先根据给出的相关数据将整个页面中要加入的内容进行分块，并将其中的基本内容加入到html文件中。然后在css文件中对每一块内容的样式进行修改，包括字体，位置，颜色等。最后在JS中对登录进行设定：现将警告内容设定好，在display内设定隐藏，当点击登录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="伪淘宝登录界面">
+<meta property="og:url" content="http://yoursite.com/2016/10/15/伪淘宝登录界面/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="伪淘宝登录界面一、操作过程###准备工作###
+
+webstorm
+bootstrap
+html，css，js相关知识
+
+####页面内容####
+首先根据给出的相关数据将整个页面中要加入的内容进行分块，并将其中的基本内容加入到html文件中。然后在css文件中对每一块内容的样式进行修改，包括字体，位置，颜色等。最后在JS中对登录进行设定：现将警告内容设定好，在display内设定隐藏，当点击登录">
+<meta property="og:updated_time" content="2016-10-16T04:46:42.164Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="伪淘宝登录界面">
+<meta name="twitter:description" content="伪淘宝登录界面一、操作过程###准备工作###
+
+webstorm
+bootstrap
+html，css，js相关知识
+
+####页面内容####
+首先根据给出的相关数据将整个页面中要加入的内容进行分块，并将其中的基本内容加入到html文件中。然后在css文件中对每一块内容的样式进行修改，包括字体，位置，颜色等。最后在JS中对登录进行设定：现将警告内容设定好，在display内设定隐藏，当点击登录">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=028c63b1" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#伪淘宝登录界面"><span class="toc-text">伪淘宝登录界面</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、操作过程"><span class="toc-text">一、操作过程</span></a></li></ol></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-伪淘宝登录界面" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">伪淘宝登录界面</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2016.10.15</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Yruri</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.forsigner.com/2016/10/15/伪淘宝登录界面/#disqus_thread"></a>
+        </span>
+      
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="伪淘宝登录界面"><a href="#伪淘宝登录界面" class="headerlink" title="伪淘宝登录界面"></a><strong>伪淘宝登录界面</strong></h1><h2 id="一、操作过程"><a href="#一、操作过程" class="headerlink" title="一、操作过程"></a><strong>一、操作过程</strong></h2><p>###准备工作###</p>
+<ol>
+<li>webstorm</li>
+<li>bootstrap</li>
+<li>html，css，js相关知识</li>
+</ol>
+<p>####页面内容####</p>
+<p>首先根据给出的相关数据将整个页面中要加入的内容进行分块，并将其中的基本内容加入到html文件中。然后在css文件中对每一块内容的样式进行修改，包括字体，位置，颜色等。最后在JS中对登录进行设定：现将警告内容设定好，在display内设定隐藏，当点击登录按钮是，对usename和password栏输入的内容进行判断，当不满足某个预定条件时，显示对应警告，满足时，显示登录成功。</p>
+<p>####心得与体会####</p>
+<p>这次的学习内容感觉难度有点大，毕竟在此之前没有接触过前端的相关内容，又因为最近时间比较紧，只能在大致看完JS的基本内容后，不断的通过百度不清楚如何下手的内容，然后先学习别人用过相关内容的程序，再来写自己的页面，到最后还是通过其他同学的帮助才能算是把要求中的基本效果达成了。现在来总结一下，在完成整个程序时遇到的问题：  </p>
+<ol>
+<li>计时器，一开始以为计时器的用法是加到整个function的外面，找了好久不知道怎么在执行function的时候延时3s，后来才知道计时器也可以在function内部直接使用。  </li>
+<li>一开始不会加入单独的js文件，直接在html里面写了js的内容，但是在写完后却总是没有效果，后来把代码直接放入了新的.JS文件中了。</li>
+</ol>
+<p>虽然这次的学习遇到了很多困难，但是如果肯花时间，我认为我还是能把任务学习好的。</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://yoursite.com/2016/10/15/伪淘宝登录界面/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
